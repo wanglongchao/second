@@ -1,0 +1,23 @@
+#set($name="李四")
+hello,${name},$date
+##单行注释
+#*
+多行注释
+*#
+姓名$student.name 地址 $student.address 年龄 $student.old(100)
+#set($email="123")
+$email
+\$email
+\\$email
+\\\$email
+#set($criteria=[100,80])
+#foreach($criterion in $criteria)
+#set($result=false)
+#set($result=$student.old($criterion))
+#if($result)
+successful
+#end
+#end
+#set($num="ewew")
+#set($num2='$num/fff')
+$num2
